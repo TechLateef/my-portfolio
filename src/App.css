@@ -145,9 +145,17 @@ align-self: center;
 .input{
   display: flex;
   gap: 20px;
+ 
+}
+input{
+  border-radius: 10px;
+  padding: 3px;
+  box-shadow: 4px 3px 5px 2px #00000040;
 }
 .area{
   width: 1000px;
+  border-radius: 5px;
+  border: unset;
 }
 
 @media screen and (max-width:600px ) {
