@@ -155,7 +155,7 @@ input{
 .area{
   width: 1000px;
   border-radius: 5px;
-  border: unset;
+
 }
 
 @media screen and (max-width:600px ) {
