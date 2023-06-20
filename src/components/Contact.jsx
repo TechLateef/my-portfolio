@@ -11,58 +11,66 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-     const templateParams = {
+    const templateParams = {
       from_name: name,
       from_email: email,
       message: message,
     };
-    
-    const {value} = e.target
+
+    const { value } = e.target;
 
     emailjs
       .send(
         "service_lj1b11f",
         "template_g9qgq3s",
-        	templateParams,
+        templateParams,
         "0fYsP3o1SkEqHwf5w"
       )
       .then(
         (result) => {
           console.log(result.text);
-          
         },
         (error) => {
           console.log(error.text);
         }
       );
-      setName("");
-          setEmail("");
-          setMessage("");
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
-    <div className="all main">
+    <div className="all main min-h-screen">
       <div className="all contact">
         <h1 id="contact">Want to get in touch? Drop me a line!</h1>
         <form onSubmit={handleSubmit}>
           <div className="input">
-          <input value={name}  onChange={(e) => setName(e.target.value)}
-           placeholder="Enter Your Name"
-          />
-          
-            <input 
-             onChange={(e) => setEmail(e.target.value)}
-             value={email}
-       
-             placeholder="Enter Your Email" />
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Enter Your Name"
+            />
+
+            <input
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              placeholder="Enter Your Email"
+            />
           </div>
 
-          <textarea rows={20} className="area"
-           value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        required
+          <textarea
+            rows={20}
+            className="area"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
           ></textarea>
-          <Button variant="outlined" size="medium" type="submit">
+          <Button
+            className="button h-10 w-8 "
+            variant="outlined"
+            size="medium"
+            type="submit"
+          >
             Submit
           </Button>
         </form>

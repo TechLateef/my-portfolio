@@ -3,8 +3,8 @@ import profile from "../asset/Snapchat-1839351438.jpg";
 const Hero = () => {
   return (
     <>
-      <div className="hero-b"></div>
-      <div className="hero all">
+      <div className="hero-b "></div>
+      <div className="hero all min-h-screen">
         <div className="hero-img">
           <img src={profile} alt="my-photo" />
         </div>

@@ -7,8 +7,8 @@ import gridp from "../asset/grid.png";
 
 const Work = () => {
   return (
-    <>
-      <h1 style={{ textAlign: "center" }} id="work">
+    <div className="min-h-screen">
+      <h1 className="text-center text-5xl mt-7 " id="work">
         Works
       </h1>
       <div className="project all">
@@ -27,13 +27,13 @@ const Work = () => {
           <Img url={pricing} />
           <Button text="holla" />
         </div>
-        <div className="item s">
+        <div className="item s ">
           <Img url={gridp} />
           <Button text="holla" />
         </div>
         <hr />
       </div>
-    </>
+    </div>
   );
 };
 
