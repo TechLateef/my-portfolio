@@ -4,6 +4,7 @@ import myIg from "../asset/Ig.png";
 import todo from "../asset/Todo.png";
 import pricing from "../asset/Price.png";
 import gridp from "../asset/grid.png";
+import daties from "../asset/daties.png";
 
 const Work = () => {
   return (
@@ -28,8 +29,11 @@ const Work = () => {
           <Button text="holla" />
         </div>
         <div className="item s ">
-          <Img url={gridp} />
-          <Button text="holla" />
+          <Img url={daties} />
+          <Button
+            link="https://data-flow.netlify.app/"
+            text="This project is created using Reactjs and tailwind css"
+          />
         </div>
         <hr />
       </div>

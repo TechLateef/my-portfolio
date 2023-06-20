@@ -167,7 +167,7 @@ input{
 
 }
 
-@media screen and (max-width:600px ) {
+@media screen and (max-width:700px ) {
  
   .container{
     grid-template-columns: 1fr;
@@ -204,7 +204,7 @@ input{
     justify-content: center;
     height: 80rem;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
   }
 
   .item{
@@ -241,5 +241,8 @@ input{
       }
       .input{
        flex-direction: column;
+      }
+      .contact h1 {
+        font-size: 1.5rem;
       }
 }
